@@ -130,8 +130,6 @@ It:
    - `readmitted` predictions
    - optional probability column `readmitted_proba_yes`
 
-This avoids a common hackathon failure: mismatched columns between train and final.
-
 ---
 
 ## How to run
@@ -148,25 +146,8 @@ python HackathonTabularClassification.py
 
 ---
 
-## Project structure
-```text
-.
-├── HackathonTabularClassification.py
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
 ## Reproducibility
 - Train/test split uses `random_state=42`
 - Stratified 10-fold CV uses `random_state=42`
 
 ---
-
-## Notes / Potential improvements
-- Try tree-based models (Random Forest / XGBoost / LightGBM) for stronger tabular performance.
-- Tune threshold (not always 0.5) if Recall of the minority class is the main objective.
-- Consider adding calibration if probability quality matters.
-- Add a clean CLI interface (argparse) instead of hard-coded paths.
