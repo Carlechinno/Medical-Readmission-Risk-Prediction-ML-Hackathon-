@@ -144,7 +144,7 @@ pd.set_option("display.width", None)
 pd.set_option("display.max_colwidth", None)
 
 # ---CONFIGS---
-DATA_PATH = r"C:\Users\Carmel\Desktop\Carmel\Codes\Python\Hackathon\health_student_data.csv"
+DATA_PATH = r"*************************************"
 
 TOP_MISSING_N = 50  # How many columns to show for missing % check
 TOP_CAT_N = 10  # How many most frequent values per categorical column
